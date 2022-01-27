@@ -19,6 +19,7 @@ export default {
     background-color: black;
     margin-top: 30px;
     height: 100px;
+    display: flex;
   }
   h2{
     color: white;

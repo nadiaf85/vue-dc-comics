@@ -10,7 +10,7 @@
           <ul>
             <li v-for="(element, index) in links" :key="index">
               <a href="#" :class="{'active': element.current}">{{element.text}}</a>
-          </li>
+            </li>
           </ul>
         </nav>
       </div>
@@ -80,11 +80,18 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-  
+<style lang="scss" scoped>
+  @import '../assets/style/partials/variables.scss';
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   .logo{
     display: flex;
     width: 25%;
+    padding: 8px;
   }
 
   nav{
@@ -101,6 +108,13 @@ export default {
       padding: 15px 20px;
       text-decoration: none;
       text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 800;
+
+      &:hover{
+        border-bottom:4px solid $first_color;
+        color: $first_color;
+      }
     }
   }
 </style>

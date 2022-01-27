@@ -1,17 +1,25 @@
 <template>
-  <footer>
-    <div class="container">
-      
-    </div>
-  </footer>
+  <div>
+    <FooterTop/>
+    <FooterSottomenu/>
+    <FooterSocial/>
+  </div>
 </template>
 
 <script>
+import FooterTop from "./FooterTop.vue";
+import FooterSottomenu from "./FooterSottomenu.vue";
+import FooterSocial from "./FooterSocial.vue";
 export default {
-    name: 'Footer'
+  name: 'Footer',
+  components: {
+    FooterTop,
+    FooterSottomenu,
+    FooterSocial
+  }
 }
 </script>
 
-<style lang="scss" scoped>
-  
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
 </style>
