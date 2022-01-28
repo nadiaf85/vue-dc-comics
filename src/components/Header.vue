@@ -9,7 +9,7 @@
         <nav>
           <ul>
             <li v-for="(element, index) in links" :key="index">
-              <a href="#" :class="{'active': element.current}">{{element.text}}</a>
+              <a href="#" :class="{'active': element.current==true}">{{element.text}}</a>
             </li>
           </ul>
         </nav>
@@ -116,5 +116,10 @@ export default {
         color: $first_color;
       }
     }
+  }
+
+  .active{
+        border-bottom:4px solid $first_color;
+        color: $first_color;
   }
 </style>

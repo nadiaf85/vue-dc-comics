@@ -1,28 +1,36 @@
 <template>
   <main>
-    <div class="container">
-      <section>
-        <h2> Content goes here </h2>
-      </section>
+    <div class="containerMain">
+      <div class="immagine_top">
+        <immagine-main />
+      </div>
+
+      <div class="immagine_bottom">
+        <Cards />
+      </div>
     </div>
   </main>
 </template>
 
 <script>
+import ImmagineMain from './commons/ImmagineMain.vue'
+import Cards from './sections/Cards.vue'
+
 export default {
-    name: 'Main'
+    name: 'Main',
+    components:{
+      ImmagineMain,
+      Cards
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-  main{
-    background-color: black;
-    margin-top: 30px;
-    height: 100px;
-    display: flex;
-  }
-  h2{
-    color: white;
-    text-align: start;
-  }
+ 
+.immagine_bottom{
+  background-color: black;
+  margin-top: 30px;
+  height: 500px;
+  display: flex;
+}
 </style>

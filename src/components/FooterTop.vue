@@ -2,7 +2,7 @@
   <footer>
     <div class="barra_blu">   
       <div class="container">
-        <div class="container_icons" v-for="(element,index) in icons" :key="index">
+        <div class="container_icone" v-for="(element,index) in icons" :key="index">
           <img src="../assets/img/buy-comics-digital-comics.png" alt="">
           <p>{{element.text}}</p>
         </div>
@@ -54,7 +54,7 @@ export default {
     text-transform: uppercase;
 }
 
-.container_icons{
+.container_icone{
   display: flex;
   align-items: center;
   font-size: 13px;

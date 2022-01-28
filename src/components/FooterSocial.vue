@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="container_bottom">
       <button>SIGN UP NOW!</button>
         <div class="icone">
           <h3>FOLLOW US</h3>
@@ -24,9 +24,20 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/partials/variables.scss';
 
+.container_bottom{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer{
   background-color: black;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .icone{
     color: $first_color;
