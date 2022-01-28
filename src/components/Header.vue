@@ -95,6 +95,7 @@ export default {
   }
 
   nav{
+     line-height: 80px;
 
     ul{
     list-style-type: none;
@@ -105,11 +106,11 @@ export default {
     li a{
       display: inline-block;
       color: #000;
-      padding: 15px 20px;
+      padding: 15px 10px;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 13px;
-      font-weight: 800;
+      font-size: 12px;
+      font-weight: 600;
 
       &:hover{
         border-bottom:4px solid $first_color;
@@ -121,5 +122,6 @@ export default {
   .active{
         border-bottom:4px solid $first_color;
         color: $first_color;
+        padding-bottom: 20px;
   }
 </style>

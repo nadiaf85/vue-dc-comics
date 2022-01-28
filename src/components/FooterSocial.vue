@@ -1,15 +1,17 @@
 <template>
   <footer>
-    <div class="container_bottom">
-      <button>SIGN UP NOW!</button>
-        <div class="icone">
-          <h3>FOLLOW US</h3>
-          <img src="../assets/img/footer-facebook.png" alt="">
-          <img src="../assets/img/footer-periscope.png" alt="">
-          <img src="../assets/img/footer-pinterest.png" alt="">
-          <img src="../assets/img/footer-twitter.png" alt="">
-          <img src="../assets/img/footer-youtube.png" alt="">
-        </div> 
+    <div class="container">
+      <div class="container_bottom">
+        <button>SIGN UP NOW!</button>
+          <div class="icone">
+            <h3>FOLLOW US</h3>
+            <img src="../assets/img/footer-facebook.png" alt="">
+            <img src="../assets/img/footer-periscope.png" alt="">
+            <img src="../assets/img/footer-pinterest.png" alt="">
+            <img src="../assets/img/footer-twitter.png" alt="">
+            <img src="../assets/img/footer-youtube.png" alt="">
+          </div> 
+        </div>
       </div>
   </footer>
 </template>
@@ -25,8 +27,7 @@ export default {
 @import '../assets/style/partials/variables.scss';
 
 .container_bottom{
-  width: 90%;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,6 +61,10 @@ footer{
       margin: 0 5px;
     }
   }
+}
+
+.icone img{
+  padding: 8px;
 }
 
   

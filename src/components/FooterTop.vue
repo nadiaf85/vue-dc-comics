@@ -3,7 +3,7 @@
     <div class="barra_blu">   
       <div class="container">
         <div class="container_icone" v-for="(element,index) in icons" :key="index">
-          <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+           <img :src="element.image" alt="">
           <p>{{element.text}}</p>
         </div>
       </div>
@@ -19,18 +19,23 @@ export default {
         icons: [
             {
                 text: "Digital comics",
+                image: require("../assets/img/buy-comics-digital-comics.png")
             },
             {
                 text: "DC Merchandise",
+                image: require("../assets/img/buy-comics-merchandise.png")
             },
             {
                 text: "Subscription",
+                image: require("../assets/img/buy-comics-subscriptions.png")
             },
             {
                 text: "Comic shop locator",
+                image: require("../assets/img/buy-comics-shop-locator.png")
             },
             {
                 text: "Dc power visa",
+                image: require("../assets/img/buy-dc-power-visa.svg")
             },
         ]
       }
@@ -48,7 +53,7 @@ export default {
 
 .barra_blu{
     background-color: $first_color;
-    height: 200px;
+    height: 150px;
     display: flex;
     padding: 15px 20px;
     text-transform: uppercase;

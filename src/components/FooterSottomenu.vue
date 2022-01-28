@@ -5,8 +5,8 @@
         <ul v-for="(element, index) in categorie" :key="index">{{element.text}}
           <li v-for="(element, index) in categorie[index].content" :key="index">{{element.text}}</li>
         </ul>
-        <img src="../assets/img/dc-logo-bg.png" alt="">
       </div>
+      <img src="../assets/img/dc-logo-bg.png" alt="">
     </div>
   </footer>
 </template>
@@ -124,19 +124,36 @@ export default {
 
 footer{
   width: 100%;
-  height: 400px;
+  height: 280px;
   background-image: url("../assets/img/footer-bg.jpg");
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  overflow-y: hidden;
+
+  &>div{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+      width: 480px;
+      height: 416px;
+  }
+}
 
 .sottomenu_lista{
   display: flex;
-  margin-top: 30px;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 362px;
+  height: 100%;
+  margin-top: 60px;
+  
 
   img{
-    width: 28%;
+    width: 80%;
   }
 
   ul{
@@ -145,14 +162,15 @@ footer{
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 15px;
 
     li{
-      color: white;
+      color: lightgray;
       text-transform: capitalize;
       font-size: 11px;
-      margin: 10px 0;
+      margin: 4px 0;
+      font-weight: 200;
       }
     }
   }
