@@ -1,7 +1,6 @@
 <template>
 <div class="containerMain">
   <div class="hero">
-    <img src="../../assets/img/jumbotron.jpg" alt="">
   </div>
 </div>
 </template>
@@ -16,16 +15,16 @@ export default {
 
 .containerMain{
   width: 100%;
-  height: 300px;
+  height: 290px;
 }
 
 .hero{
-  img{
+  height: 320px;
   width: 100%;
-  height: 400px;
+  background-image: url(../../assets/img/jumbotron.jpg) ;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  }
 }
 
 </style>
