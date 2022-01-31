@@ -3,7 +3,7 @@
       <div class="container">
         <div class="container_cards">
             <Card v-for="(element,index) in carte" :key="index" :carta="element" :series="element.series"/>
-            <SeriesData/>
+            <seriesData/>
         </div>
     </div>
   </section>

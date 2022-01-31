@@ -111,11 +111,6 @@ export default {
       text-transform: uppercase;
       font-size: 12px;
       font-weight: 600;
-
-      &:hover{
-        border-bottom:4px solid $first_color;
-        color: $first_color;
-      }
     }
   }
 

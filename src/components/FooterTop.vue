@@ -65,8 +65,8 @@ export default {
   font-size: 13px;
   
   img{
-    width: 50px;
-    height: 60px;
+    width: 40px;
+    height: 50px;
     margin-right: 10px;
   }
   p{
